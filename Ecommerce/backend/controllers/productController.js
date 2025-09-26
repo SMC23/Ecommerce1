@@ -1,5 +1,5 @@
 const db = require('../config/db')
-const supabase = require('../config/subase')
+const supabase = require('../config/supabase')
 
 // Mostrar todos los productos
 exports.getProductos = async (req, res) => {

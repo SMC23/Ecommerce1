@@ -12,9 +12,9 @@ const Register = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ nombre, correo, contrasena }),
       });
-
+      
       const data = await response.json();
-
+      console.log("Respuesta del backend:", data);
       if (response.ok) {
         alert("Usuario registrado ✅");
 
